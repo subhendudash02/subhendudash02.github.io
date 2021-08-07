@@ -125,12 +125,6 @@ body, html {
   text-align: justify;
 }
 
-.Contacts {
-	padding: 35px 0;
-	text-align: center;
-	padding: 50px;
-  
-}
 .Contacts a {
 	color: white;
 	display: inline-block;
@@ -161,10 +155,6 @@ body, html {
 
 @media only screen and (max-width: 600px) {
   .flexSkills {
-    flex-direction: column;
-  }
-
-  .flexContact {
     flex-direction: column;
   }
 }
