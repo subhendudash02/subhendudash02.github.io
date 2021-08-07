@@ -106,7 +106,7 @@ body, html {
   box-shadow: 5px 4px;
 }
 
-.flexSkills, .flexContact {
+.flexSkills {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -125,19 +125,31 @@ body, html {
   text-align: justify;
 }
 
-.socialCard {
-  background-color: white;
-  flex: 30%;
-  padding: 2em;
-  margin: 2em;
-  border-radius: 0.5em;
-  color: black;
+.Contacts {
+	padding: 35px 0;
+	text-align: center;
+	padding: 50px;
+  
 }
-
-
-#twitter:hover {
-  background-color: #1DA1F2;
-  transition-duration: 1s;
+.Contacts a {
+	color: white;
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 10px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 1.25;
+	border: 1px solid white;
+	border-radius: 100%;
+	margin: 0 10px;
+	transition: all 0.15s linear;
+	transform: scale(1);
+}
+.Contacts a:hover {
+	color: blue;
+	border: 1px solid blue;
+	transform: scale(1.5);
 }
 
 @media only screen and (min-width: 1000px){
