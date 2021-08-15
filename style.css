@@ -158,3 +158,8 @@ body, html {
     flex-direction: column;
   }
 }
+
+nav {
+  font-weight: bold;
+  color: black;
+}
