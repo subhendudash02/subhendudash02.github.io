@@ -7,7 +7,7 @@
 }
 
 .info {
-    transform: translateY(120%);
+    transform: translateY(50%);
 }
 
 @media only screen and (max-width: 768px){
