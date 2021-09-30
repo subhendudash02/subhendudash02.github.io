@@ -1,0 +1,17 @@
+* {
+    margin: 2%;
+}
+
+.consPage {
+    transform: translate(50%, 50%);
+}
+
+.info {
+    transform: translateY(120%);
+}
+
+@media only screen and (max-width: 768px){
+    .consPage {
+        transform: translate(40%, 100%);
+    }
+}
