@@ -1,8 +1,8 @@
-const { createServer } = require("http");
-const app = require("./dist/App.js");
+import { createServer } from "http";
+import { render } from "./dist/App.js";
 
 createServer((req, res) => {
-  const { html } = app.render({ url: req.url });
+  const { html } = render({ url: req.url });
 
   res.write(`
     <!DOCTYPE html>
