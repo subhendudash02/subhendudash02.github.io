@@ -29,7 +29,7 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="/">Contact</a></li>
             </ul>
             <div class="hamburger">
