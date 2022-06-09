@@ -1,10 +1,16 @@
 <script>
 	import Navbar from './components/Navbar.svelte';
+	import Demo from './components/Demo.svelte';
+	import { Router, Route } from "svelte-navigator";
 </script>
 
-<body>
+<main>
+	<Router>
 	<Navbar />
-</body>
+
+	<Route path="about" component={Demo} />
+	</Router>
+</main>
 
 <style>
 
