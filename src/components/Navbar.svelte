@@ -1,6 +1,5 @@
 <script defer>
     import { Router } from "svelte-navigator";
-   
     // const hamburger = document.querySelector(".hamburger");
     // const navMenu = document.querySelector(".nav-menu");
     // const navLink = document.querySelectorAll(".nav-link");
