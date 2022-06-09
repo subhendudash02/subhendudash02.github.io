@@ -1,13 +1,11 @@
 <script>
-	export let name;
+	import Navbar from './components/Navbar.svelte';
 </script>
 
-<main>
-	<h1>{ name }</h1>
-</main>
+<body>
+	<Navbar />
+</body>
 
 <style>
-	h1 {
-		text-align: center;
-	}
+
 </style>
