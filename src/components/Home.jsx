@@ -2,6 +2,7 @@ import "../styles/home.css";
 
 import theme from '../utils/themes.js';
 import social from "../utils/social.js";
+import config_particle from "../utils/setParticle.js";
 
 import { ThemeProvider } from "@emotion/react";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -11,10 +12,27 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { SvgIcon } from '@mui/material';
 
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
 export default function Home() {
+    const particlesInit = async (main) => {
+        console.log(main);
+        await loadFull(main);
+      };
+    
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
     return (
         <div className="home">
             <h1 className="mainHeading">Welcome to my Portfolio!</h1>
+            <Particles className="particles" 
+                    id="tsparticles" 
+                    init={particlesInit} 
+                    loaded={particlesLoaded}
+                    options={config_particle} />
+            
             <ThemeProvider theme={theme}>
                 <a href={social.github}><GitHubIcon className="socIcon" fontSize="large" color="primary" /></a>
                 <a href={social.devto}><LogoDevIcon className="socIcon" fontSize="large" color="primary" /></a>
