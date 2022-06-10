@@ -29,4 +29,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: npm run deploy
+    - run: |
+        git config user.name "subhendudash02" && git config user.email "subhendu.dash2020@vitstudent.ac.in"
+        npm run gh-pages-deploy
