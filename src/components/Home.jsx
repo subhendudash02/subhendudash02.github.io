@@ -1,3 +1,5 @@
+// homepage
+
 import "../styles/home.css";
 
 import theme from '../utils/themes.js';
