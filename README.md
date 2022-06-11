@@ -1,5 +1,1 @@
-# My Portfolio
-
-[Website](https://subhendudash02.github.io)
-
-### STILL IN CONSTRUCTION
+My old portfolio using HTML, CSS, JavaScript.
