@@ -7,6 +7,7 @@ const social = {
     linkedin: "https://www.linkedin.com/in/subhendu21/",
     twitter: "https://twitter.com/subhendudash02",
     stackoverflow: "https://stackoverflow.com/users/14406184/subhendu-dash",
+    discord: "Subhendu Dash#2991"
 }
 
 export default social;
