@@ -10,8 +10,8 @@ export default function Navbar() {
                 <ul className="nav-menu">
                     <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to="/">Work</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to="/">Contact</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/work">Work</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                 </ul>
                 <div className="hamburger">
                     <span className="bar"></span>
