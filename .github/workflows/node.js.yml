@@ -27,6 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+      env:
+        CI: true
+        REACT_APP_PUBLIC_KEY: ${{secrets.REACT_APP_PUBLIC_KEY}}
+        REACT_APP_SERVICE_ID: ${{secrets.REACT_APP_SERVICE_ID}}
+        REACT_APP_TEMPLATE_ID: ${{secrets.REACT_APP_TEMPLATE_ID}}
     - run: npm run build --if-present
     - run: npm test
     
