@@ -30,9 +30,9 @@ export default function Contact() {
                 <h2>Send a mail here!</h2>
 
                 <form ref={sendMsg} onSubmit={send}>
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="email" name="email" placeholder="Email" />
-                    <textarea name="message" />
+                    <input type="text" name="name" placeholder="Name" required={true} /><br />
+                    <input type="email" name="email" placeholder="Email" required={true} /><br />
+                    <textarea rows="5" name="message" required={true} placeholder='Message' /><br />
                     <input type="submit" value="Send!" />
                 </form>
             </div>

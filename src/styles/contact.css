@@ -18,3 +18,26 @@ a {
     color: rgb(25, 207, 25);
     font-weight: bolder;
 }
+
+input[type="text"], input[type="email"] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 0 0 2% 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-width: 40%;
+    margin: 0 0 2% 0;
+}
+
+input[type="submit"] {
+    padding: 1% 3% 1% 3%;
+    border-radius: 10px;
+    background-color: rgb(25, 207, 25);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
