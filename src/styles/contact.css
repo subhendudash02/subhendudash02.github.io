@@ -31,6 +31,7 @@ input[type="text"], input[type="email"] {
 textarea {
     min-width: 40%;
     margin: 0 0 2% 0;
+    padding: 1%;
 }
 
 input[type="submit"] {
@@ -40,4 +41,20 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    input[type="text"], input[type="email"] {
+        width: 60%;
+    }
+
+    textarea {
+        min-width: 70%;
+        padding: 1%;
+    }
+
+    input[type="submit"] {
+        padding: 3% 5% 3% 5%;
+        font-size: medium;
+    }
 }
