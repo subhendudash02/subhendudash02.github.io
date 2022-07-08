@@ -13,11 +13,6 @@ export default function Navbar() {
                     <li className="nav-item"><Link className="nav-link" to="/work">Work</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
                 </ul>
-                <div className="hamburger">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                </div>
             </nav>
         </div>
     );
