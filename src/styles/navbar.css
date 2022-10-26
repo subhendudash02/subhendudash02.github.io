@@ -35,7 +35,7 @@ a {
 }
 
 .nav-link:hover {
-    color: --green;
+    color: var(--green);
     transition-duration: 1s;
 }
 
