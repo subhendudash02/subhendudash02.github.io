@@ -1,0 +1,63 @@
+.work {
+    padding: 2%;
+}
+
+/* Vertical Line */
+
+.line {
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #FFF;
+    top: 5%;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+.card {
+    padding: 1% 2% 1% 2%;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: black;
+    margin: 2%;
+}
+
+.center {
+    margin: auto;
+}
+
+.left {
+    clear: both;
+    width: 30%;
+    float: left;
+}
+
+.right {
+    width: 30%;
+    clear: both;
+    float: right;
+}
+
+/* Horizontal Line */
+
+.left::before, .right::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    border-top: 2px solid #FFF;
+    display: inline-block;
+}
+
+.right::before {
+    right: 20%;
+}
