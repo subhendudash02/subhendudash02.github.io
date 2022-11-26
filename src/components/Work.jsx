@@ -1,28 +1,35 @@
 import "../styles/work.css";
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function Work() {
     return (
-        <div className="work line">
-            <div className="card center">
+        <div className="work">
+            <div className="heading center">
                 <h1>Hello</h1>
             </div>
 
-            <div className="card left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat qui velit nisi temporibus officiis, laborum nostrum? In, voluptates commodi? Sapiente beatae maiores quidem debitis magni maxime aliquid accusantium dolores?</p>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="date">15 Dec</div>
+                    <SchoolIcon class="icon"></SchoolIcon>
+                    <div class="content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">22 Oct</div>
+                    <i class="icon fa fa-gift"></i>
+                    <div class="content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                    </div>
+                </div>
             </div>
-
-            <div className="card right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus esse eaque quaerat libero? Distinctio recusandae, asperiores labore ratione alias id dolorem quasi maxime, ut voluptatem perferendis eos quia quod illo.</p>
-            </div>
-
-            <div className="card left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat qui velit nisi temporibus officiis, laborum nostrum? In, voluptates commodi? Sapiente beatae maiores quidem debitis magni maxime aliquid accusantium dolores?</p>
-            </div>
-
-            <div className="card right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus esse eaque quaerat libero? Distinctio recusandae, asperiores labore ratione alias id dolorem quasi maxime, ut voluptatem perferendis eos quia quod illo.</p>
-            </div>
-            
         </div>
     );
 }
