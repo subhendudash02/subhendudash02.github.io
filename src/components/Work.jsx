@@ -1,35 +1,48 @@
 import "../styles/work.css";
+
 import SchoolIcon from '@mui/icons-material/School';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+
+import description from "../utils/description";
 
 export default function Work() {
     return (
         <div className="work">
-            <div className="heading center">
-                <h1>Hello</h1>
-            </div>
+            <ul className="flowDesc">
+                <SchoolIcon className="flowIcon" fontSize="large"></SchoolIcon>
+                <li className="flowBox">
+                    <h2>{description.college.name}</h2>
+                    <i>{description.college.year}</i>
+                    <p>{description.college.desc[0]}</p>
+                    <p>{description.college.desc[1]}</p>
+                    <p>{description.college.desc[2]}</p>
+                    <p>{description.college.desc[3]}</p>
+                </li>
 
-            <div class="timeline">
-                <div class="container left">
-                    <div class="date">15 Dec</div>
-                    <SchoolIcon class="icon"></SchoolIcon>
-                    <div class="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                    </div>
-                </div>
-                <div class="container right">
-                    <div class="date">22 Oct</div>
-                    <i class="icon fa fa-gift"></i>
-                    <div class="content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                    </p>
-                    </div>
-                </div>
-            </div>
+                <li className="flowBox">
+                    <h2>{description.school.name}</h2>
+                    <i>{description.school.year}</i>
+                    <p>{description.school.desc[0]}</p>
+                </li>
+            </ul>
+
+            <ul className="flowDesc">
+                <VolunteerActivismIcon className="flowIcon" fontSize="large"></VolunteerActivismIcon>
+                <li className="flowBox">
+                    <h2>{description.hc.name}</h2>
+                    <i>{description.hc.year}</i>
+                    <p>{description.hc.desc[0]}</p>
+                    <p>{description.hc.desc[1]}</p>
+                </li>
+
+                <li className="flowBox">
+                    <h2>{description.gwoc.name}</h2>
+                    <i>{description.gwoc.year}</i>
+                    <p>{description.gwoc.desc[0]}</p>
+                    <p>{description.gwoc.desc[1]}</p>
+                    <p>{description.gwoc.desc[2]}</p>
+                </li>
+            </ul>
         </div>
     );
 }
