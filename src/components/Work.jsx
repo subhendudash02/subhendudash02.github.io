@@ -44,6 +44,30 @@ export default function Work() {
                     }) }
                 </li>
             </ul>
+
+            <h1>Projects</h1>
+
+            <div className="projects">
+                <div className="card">
+                    <h1>Hangman</h1>
+                    <p>Hangman game in animal theme</p>
+                </div>
+                <div className="card">
+                    <h1>pyagenda</h1>
+                    <p>pyagenda keeps track of all your activities and notifies you when they are due.</p>
+                </div>
+            </div>
+
+            <div className="projects">
+                <div className="card">
+                    <h1>numerical methods</h1>
+                    <p>This website demonstrates different iterative numerical methods to solve a single equation as well as system of equations upto 100 iterations instantly.</p>
+                </div>
+                <div className="card">
+                    <h1>GitHub Profile Fetcher</h1>
+                    <p>	Fetches GitHub profile of a user</p>
+                </div>
+            </div>
         </div>
     );
 }

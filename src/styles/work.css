@@ -19,7 +19,7 @@
     min-height: 50px;
     border-left: 2px solid #fff;
     position: relative;
-    padding: 3%;
+    padding: 4%;
 }
 
 .flowBox::before {
@@ -39,6 +39,20 @@
 .flowBox > i {
     margin-top: 0.5%;
     display: block;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    background-color: #1F1E1E;
+    width: 50%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
 }
 
 @media screen and (max-width: 768px) {
