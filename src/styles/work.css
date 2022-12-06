@@ -55,6 +55,11 @@
     margin: 2%;
 }
 
+.card > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .work {
         padding: 2%;
@@ -66,5 +71,9 @@
 
     .flowBox {
         padding: 7%;
+    }
+
+    .card {
+        flex-direction: column;
     }
 }
