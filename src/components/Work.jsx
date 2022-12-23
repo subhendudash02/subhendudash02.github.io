@@ -5,10 +5,10 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 import description from "../utils/description";
 
-import bg from "../assets/homebg.jpg";
 import hangman from "../assets/hangman.png";
 import num from "../assets/numerical-methods.png";
 import profile from "../assets/profile-fetcher.png";
+import pyagenda from "../assets/pyagenda.png";
 
 export default function Work() {
     return (
@@ -59,7 +59,7 @@ export default function Work() {
                     <p>Hangman game in animal theme</p>
                 </div>
                 <div className="card">
-                    <img src={bg} alt="pyagenda" />
+                    <img src={pyagenda} alt="pyagenda" />
                     <h1>pyagenda</h1>
                     <p>pyagenda keeps track of all your activities and notifies you when they are due.</p>
                 </div>
