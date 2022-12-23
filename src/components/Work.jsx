@@ -4,6 +4,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 import description from "../utils/description";
+import ProjectTile from "../utils/projectTile";
+import projectDesc from "../utils/projectDesc";
 
 import hangman from "../assets/hangman.png";
 import num from "../assets/numerical-methods.png";
@@ -53,29 +55,35 @@ export default function Work() {
             <h1>Projects</h1>
 
             <div className="projects">
-                <div className="card">
-                    <img src={hangman} alt="hangman" />
-                    <h1>Hangman</h1>
-                    <p>Hangman game in animal theme</p>
-                </div>
-                <div className="card">
-                    <img src={pyagenda} alt="pyagenda" />
-                    <h1>pyagenda</h1>
-                    <p>pyagenda keeps track of all your activities and notifies you when they are due.</p>
-                </div>
+                <ProjectTile img={hangman} 
+                            title={projectDesc.hangman.title}
+                            description={projectDesc.hangman.description}
+                            githubLink={projectDesc.hangman.githubLink}
+                            visitLink={projectDesc.hangman.link}>
+                </ProjectTile>
+
+                <ProjectTile img={pyagenda} 
+                            title={projectDesc.pyagenda.title}
+                            description={projectDesc.pyagenda.description}
+                            githubLink={projectDesc.pyagenda.githubLink}
+                            visitLink={projectDesc.pyagenda.link}>
+                </ProjectTile>
             </div>
 
             <div className="projects">
-                <div className="card">
-                    <img src={num} alt="numerical-methods" />
-                    <h1>numerical methods</h1>
-                    <p>This website demonstrates different iterative numerical methods to solve a single equation as well as system of equations upto 100 iterations instantly.</p>
-                </div>
-                <div className="card">
-                    <img src={profile} alt="profile-fetcher" />
-                    <h1>GitHub Profile Fetcher</h1>
-                    <p>	Fetches GitHub profile of a user</p>
-                </div>
+                <ProjectTile img={num} 
+                            title={projectDesc.numericalMethods.title}
+                            description={projectDesc.numericalMethods.description}
+                            githubLink={projectDesc.numericalMethods.githubLink}
+                            visitLink={projectDesc.numericalMethods.link}>
+                </ProjectTile>
+
+                <ProjectTile img={profile} 
+                            title={projectDesc.profileFetcher.title}
+                            description={projectDesc.profileFetcher.description}
+                            githubLink={projectDesc.profileFetcher.githubLink}
+                            visitLink={projectDesc.profileFetcher.link}>
+                </ProjectTile>
             </div>
         </div>
     );

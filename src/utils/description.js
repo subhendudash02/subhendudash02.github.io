@@ -5,7 +5,6 @@ const description = {
         desc: [
             "Persuing B.Tech in Electrical and Electronics Engineering",
             "Took part in TechnoVIT by managing a gaming event and a hackathon",
-            "Participated in several online hackathons and an offline hackathon by Hack Club",
             "CGPA: 8.67",
         ]
     },
@@ -20,6 +19,7 @@ const description = {
         name: "Hack Club VIT Chennai",
         year: "2020-Present",
         desc: [
+            "Participated in several online hackathons and an offline hackathon by Hack Club",
             "Built different websites for online hackathons and gaming event",
             "Now heading web development team",
         ]

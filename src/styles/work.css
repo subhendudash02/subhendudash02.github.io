@@ -60,6 +60,16 @@
     border-radius: 10px;
 }
 
+.githubLink {
+    background-color: transparent;
+    border: 1px solid rgb(25, 207, 25);
+    color: rgb(38, 226, 38);
+    border-radius: 10px;
+    padding: 2%;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
 @media screen and (max-width: 768px) {
     .work {
         padding: 2%;
@@ -73,7 +83,14 @@
         padding: 7%;
     }
 
-    .card {
+    .projects {
         flex-direction: column;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 90%;
+        margin: 2%;
+        padding: 4%;
     }
 }
