@@ -3,7 +3,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-import {Route, HashRouter, Routes, BrowserRouter} from "react-router-dom";
+import {Route, Routes, BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
