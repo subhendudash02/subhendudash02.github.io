@@ -3,12 +3,12 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-import {Route, Routes, BrowserRouter} from "react-router-dom";
+import {Route, Routes, HashRouter} from "react-router-dom";
 
 function App() {
   return (
     <div className="App"> 
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
