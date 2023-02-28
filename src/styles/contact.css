@@ -1,5 +1,5 @@
 .contact {
-    padding: 2%;
+    padding: 5%;
     text-align: center;
 }
 
@@ -44,6 +44,10 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+    .contact {
+        padding-top: 20%;
+    }
+
     input[type="text"], input[type="email"] {
         width: 60%;
     }

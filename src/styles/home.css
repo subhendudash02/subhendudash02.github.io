@@ -1,6 +1,6 @@
 .home {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 13%;
     font-size: 2rem;
 }
 
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 768px) {
     .home {
-        padding-top: 30%;
+        padding-top: 70%;
     }
 
     .mainHeading {
