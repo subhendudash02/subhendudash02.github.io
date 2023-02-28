@@ -10,6 +10,7 @@ export default function Navbar() {
                 <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/work">Work</Link></li>
+                <li className="nav-item"><a href="https://www.subhendu.tech/resume/resume.pdf" className="nav-link" target="_blank" rel="noreferrer">Resume</a></li>
                 <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
             </ul>
         </nav>
