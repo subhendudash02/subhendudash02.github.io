@@ -57,10 +57,7 @@
     }
 
     .nav-menu {
-        width: 100%;
-    }
-
-    .nav-item {
         padding-top: 5%;
+        padding-left: 20%;
     }
 }
