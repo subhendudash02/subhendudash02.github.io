@@ -12,8 +12,8 @@ export default function Contact() {
     const send = (e) => {
         e.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, sendMsg.current, process.env.REACT_APP_PUBLIC_KEY)
-            .then(() => {console.log("Sent")})
-            .catch((err) => {console.log(err)});
+            .then(() => {alert("Message sent successfully!")})
+            .catch((err) => {alert("Message not sent! Try again")});
     }
 
     return (
