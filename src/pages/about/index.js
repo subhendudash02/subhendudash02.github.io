@@ -1,9 +1,11 @@
 // about
 import aboutStyle from "@/styles/About.module.css";
-
+import Navbar from "@/utils/navbar";
 
 export default function About() {
     return (
+        <>
+        <Navbar />
         <div className={aboutStyle.about}>
             <h1>About</h1>
             <div className={aboutStyle.body}>
@@ -26,5 +28,6 @@ export default function About() {
                 Peace ✌️
             </div>
         </div>
+        </>
     );
 }

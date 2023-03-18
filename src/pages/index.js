@@ -2,6 +2,7 @@ import homeStyle from '@/styles/Home.module.css';
 import config_particle from '@/utils/setParticle';
 import theme from '@/utils/themes';
 import social from '@/utils/social';
+import Navbar from "@/utils/navbar";
 
 import { ThemeProvider } from "@emotion/react";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -32,6 +33,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Navbar />
             <div className={homeStyle.home}>
                 <h1 className={homeStyle.mainHeading}>Welcome to my Portfolio!</h1>
                 <Particles className={homeStyle.particles} 

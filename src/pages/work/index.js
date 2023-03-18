@@ -1,4 +1,5 @@
 import workStyle from "@/styles/Work.module.css";
+import Navbar from "@/utils/navbar";
 
 import SchoolIcon from '@mui/icons-material/School';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
@@ -14,6 +15,8 @@ import pyagenda from "../../assets/pyagenda.png";
 
 export default function Work() {
     return (
+        <>
+        <Navbar />
         <div className={workStyle.work}>
             <ul className={workStyle.flowDesc}>
                 <SchoolIcon className={workStyle.flowIcon} fontSize="large"></SchoolIcon>
@@ -86,5 +89,6 @@ export default function Work() {
                 </ProjectTile>
             </div>
         </div>
+        </>
     );
 }

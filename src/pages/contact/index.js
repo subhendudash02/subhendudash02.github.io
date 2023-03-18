@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Navbar from '@/utils/navbar';
 
 import contactStyle from '@/styles/Contact.module.css';
 import social from '@/utils/social';
@@ -17,6 +18,8 @@ export default function Contact() {
     }
 
     return (
+        <>
+        <Navbar />
         <div className={contactStyle.contact}>
             <h1>Say Hi to me! 👋</h1>
             <p>Keep in touch via </p>
@@ -37,5 +40,6 @@ export default function Contact() {
                 </form>
             </div>
         </div>
+        </>
     );
 };
