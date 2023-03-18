@@ -1,14 +1,15 @@
-import workStyle from "@style/About.module.css";
+import workStyle from "../styles/Work.module.css";
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
 import { Stack, Typography } from "@mui/material";
+import Image from "next/image";
 
 export default function ProjectTile(props) {
     return (
         <div className={workStyle.card}>
-            <img src={props.img} alt="projectTile" />
+            <Image className={workStyle.cardImage} src={props.img} alt="projectTile" />
             <h1>{props.title}</h1>
 
             <button className={workStyle.githubLink}>

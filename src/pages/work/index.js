@@ -7,10 +7,10 @@ import description from "@/utils/description";
 import ProjectTile from "@/utils/projectTile";
 import projectDesc from "@/utils/projectDesc";
 
-import hangman from "../assets/hangman.png";
-import num from "../assets/numerical-methods.png";
-import profile from "../assets/profile-fetcher.png";
-import pyagenda from "../assets/pyagenda.png";
+import hangman from "../../assets/hangman.png";
+import num from "../../assets/numerical-methods.png";
+import profile from "../../assets/profile-fetcher.png";
+import pyagenda from "../../assets/pyagenda.png";
 
 export default function Work() {
     return (
