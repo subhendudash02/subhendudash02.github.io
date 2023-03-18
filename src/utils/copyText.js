@@ -1,4 +1,3 @@
-export default async function copy(query) {
-    const text = document.querySelector(query);
-    await navigator.clipboard.writeText(text.textContent);
+export default async function copy() {
+    await navigator.clipboard.writeText("Subhendu Dash#2991");
 }

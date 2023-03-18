@@ -26,7 +26,7 @@ export default function Contact() {
             <div className={contactStyle.links}>
                 <p>Discord -
                     <Tooltip title="copy to clipboard" arrow>
-                        <strong id={contactStyle.copy} onClick={() => copy("#copy")}> { social.discord }</strong>
+                        <strong id={contactStyle.copy} onClick={() => copy()}> { social.discord }</strong>
                     </Tooltip> 
                 </p>
                 or
