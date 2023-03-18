@@ -1,0 +1,21 @@
+.contact {
+    padding: 5%;
+    text-align: center;
+}
+
+.links {
+    margin: 3% 0 0 0;
+    font-size: 1.2rem;
+}
+
+#copy {
+    cursor: pointer;
+    font-family: monospace;
+    color: rgb(25, 207, 25);
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding-top: 20%;
+    }
+}
