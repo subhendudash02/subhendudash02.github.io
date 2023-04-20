@@ -11,7 +11,7 @@
 #copy {
     cursor: pointer;
     font-family: monospace;
-    color: rgb(25, 207, 25);
+    color: var(--green);
 }
 
 @media screen and (max-width: 768px) {

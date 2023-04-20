@@ -27,7 +27,7 @@
     left: -15px;
     content: " ";
     border-radius: 500%;
-    background: rgb(25, 207, 25);
+    background: var(--green);
     height: 30px;
     width: 30px;
 }
@@ -63,8 +63,8 @@
 
 .githubLink {
     background-color: transparent;
-    border: 1px solid rgb(25, 207, 25);
-    color: rgb(38, 226, 38);
+    border: 1px solid var(--green);
+    color: var(--green);
     border-radius: 10px;
     padding: 2%;
     cursor: pointer;
