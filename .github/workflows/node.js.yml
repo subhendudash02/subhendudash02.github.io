@@ -32,9 +32,9 @@ jobs:
     - run: touch out/.nojekyll
       env:
         CI: true
-        REACT_APP_PUBLIC_KEY: ${{secrets.REACT_APP_PUBLIC_KEY}}
-        REACT_APP_SERVICE_ID: ${{secrets.REACT_APP_SERVICE_ID}}
-        REACT_APP_TEMPLATE_ID: ${{secrets.REACT_APP_TEMPLATE_ID}}
+        NEXT_PUBLIC_KEY: ${{secrets.NEXT_PUBLIC_KEY}}
+        NEXT_SERVICE_ID: ${{secrets.NEXT_SERVICE_ID}}
+        NEXT_TEMPLATE_ID: ${{secrets.NEXT_TEMPLATE_ID}}
     
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.3

@@ -5,7 +5,7 @@ const description = {
         desc: [
             "Persuing B.Tech in Electrical and Electronics Engineering",
             "Took part in TechnoVIT by managing a gaming event and a hackathon",
-            "CGPA: 8.67",
+            "CGPA: 8.73",
         ]
     },
     school: {
