@@ -3,6 +3,10 @@ import aboutStyle from "@/styles/About.module.css";
 import Navbar from "@/utils/navbar";
 import Head from "next/head";
 
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+
+
 export default function About() {
     return (
         <>
@@ -14,25 +18,25 @@ export default function About() {
         </Head>
         <Navbar />
         <div className={aboutStyle.about}>
-            <h1>About</h1>
             <div className={aboutStyle.body}>
-                <p>Hey there! I am Subhendu Dash, currently an undergrad student in VIT Chennai, persuing Electrical Engineering.</p>
-                <p>I usually create interesting stuffs in my leisure time, and that's how my coding journey started.
-                    I started with web development when I was in high school and then I started programming in Python.
+                <h1>About me</h1>
+                <p>Hey folks, I am Subhendu Dash, who loves to tinker around wide variety of stuffs in tech such as
+                web development, both front-end and back-end, a bit of machine learning and sometimes DSA
+                and fundamentals of backend engineering too.</p>
+
+                <p>I am a final year electrical engineering student in VIT Chennai. But my passion in computer
+                stuffs has a long history. It started back in 2015 when I was in 8<sup>th</sup> grade. I was introduced to
+                to Python on how to build a simple GUI by my friend. Believe me, I didn't understand a thing back then,
+                what is canvas in tkinter, frames, etc. I didn't even think that I will encounter with Python again in 
+                11<sup>th</sup> grade. Started with Python, I entered the programming world, and I am still exploring it.
                 </p>
-                <p>
-                    I never left my coding journey because I enjoyed learning new stuffs on the go.
+
+                <p>I love to draw cartoons and solve Rubik's cube occaionally ;) I will share my artworks 
+                real soon!
                 </p>
-                <p>
-                    I love to watch movies and a lots of web series which feels refreshing to me.
-                </p>
-                <p>
-                    I play sports occasionally, such as football and badminton. Mostly I play computer games :P.
-                </p>
-                <p>
-                    That's all about me ;). My motto is to be happy always.
-                </p>
-                Peace ✌️
+
+                <p>That's all for now😊</p>
+
             </div>
         </div>
         </>
