@@ -58,7 +58,6 @@
 
 @media screen and (max-width: 768px) {
     .home {
-        padding-top: 30%;
         flex-direction: column;
     }
 
