@@ -1,11 +1,20 @@
 // navbar
 import navbarStyle from "../styles/Navbar.module.css";
 import Link from "next/link";
+import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
 
 export default function Navbar() {
+    const [toggle, setToggle] = useState(`${navbarStyle.hide}`);
+    const toggleMenu = () => {
+        if (toggle == `${navbarStyle.hide}`) setToggle(`${navbarStyle.show}`);
+        else setToggle(`${navbarStyle.hide}`);
+    }
+
     return (
-        <nav className={navbarStyle.navbar}>
-            <a href="/" className={navbarStyle.navLogo}>Subhendu Dash</a>
+        <>
+        <MenuIcon onClick={toggleMenu} id={navbarStyle.hamburger} />
+        <nav className={navbarStyle.navbar} id={toggle}>
             <ul className={navbarStyle.navMenu}>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/">Home</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/about">About</Link></li>
@@ -14,5 +23,6 @@ export default function Navbar() {
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="">Blogs</Link></li>
             </ul>
         </nav>
+        </>
     );
 }
