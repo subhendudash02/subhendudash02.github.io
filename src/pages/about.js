@@ -20,22 +20,7 @@ export default function About() {
         <div className={aboutStyle.about}>
             <div className={aboutStyle.body}>
                 <h1>About me</h1>
-                <p>Hey folks, I am Subhendu Dash, who loves to tinker around wide variety of stuffs in tech such as
-                web development, both front-end and back-end, a bit of machine learning and sometimes DSA
-                and fundamentals of backend engineering too.</p>
-
-                <p>I am a final year electrical engineering student in VIT Chennai. But my passion in computer
-                stuffs has a long history. It started back in 2015 when I was in 8<sup>th</sup> grade. I was introduced to
-                to Python on how to build a simple GUI by my friend. Believe me, I didn't understand a thing back then,
-                what is canvas in tkinter, frames, etc. I didn't even think that I will encounter with Python again in 
-                11<sup>th</sup> grade. Started with Python, I entered the programming world, and I am still exploring it.
-                </p>
-
-                <p>I love to draw cartoons and solve Rubik's cube occaionally ;) I will share my artworks 
-                real soon!
-                </p>
-
-                <p>That's all for now😊</p>
+                <p>Nothing here :)</p>
 
             </div>
         </div>
