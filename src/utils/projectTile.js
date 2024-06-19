@@ -1,15 +1,15 @@
-import workStyle from "@/styles/Projects.module.css";
+import workStyle from "../styles/Projects.module.css";
 
 // import GitHubIcon from '@mui/icons-material/GitHub';
 // import LinkIcon from '@mui/icons-material/Link';
 
-import { Card, CardMedia, Stack, Typography, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import Image from "next/image";
 
 export default function ProjectTile(props) {
 
     return (
-        <Card className={workStyle.card}>
+        <div className={workStyle.card}>
             <div className={workStyle.cardBody}>
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
@@ -20,6 +20,6 @@ export default function ProjectTile(props) {
             </div>
             {/* <LinkIcon className={workStyle.githubLink} fontSize="medium" color="primary" onClick={() => {router.push(props.visitLink)}} /> */}
             {/* <GitHubIcon className={workStyle.githubLink} fontSize="large" color="primary" onClick={() => {router.push(props.githubLink)}} /> */}
-        </Card>
+        </div>
     );
 }
