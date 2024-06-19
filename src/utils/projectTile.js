@@ -1,4 +1,4 @@
-import workStyle from "../styles/Projects.module.css";
+import workStyle from "@/styles/Projects.module.css";
 
 // import GitHubIcon from '@mui/icons-material/GitHub';
 // import LinkIcon from '@mui/icons-material/Link';
