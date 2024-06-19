@@ -1,6 +1,9 @@
 .work {
-    padding: 5% 10% 10% 10%;
+    padding: 5% 5% 5% 5%;
     margin-left: 2%;
+    /* background-color: #1F1E1E;
+    width: 60%;
+    margin: auto; */
 }
 
 .flowDesc {
@@ -67,6 +70,7 @@
     .work {
         padding: 0% 2% 2% 0%;
         width: 90%;
+        background-color: #131312;
     }
 
     .flowDesc {

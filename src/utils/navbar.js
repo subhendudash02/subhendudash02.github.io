@@ -19,6 +19,7 @@ export default function Navbar() {
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/">Home</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/about">About</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/experience">Experience</Link></li>
+                <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/projects">Projects</Link></li>
                 <li className={navbarStyle.navItem}><a href="https://subhendudash02.github.io/resume/Subhendu_Dash.pdf" className={navbarStyle.navLink} target="_blank" rel="noreferrer">Resume</a></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="">Blogs</Link></li>
             </ul>

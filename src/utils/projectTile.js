@@ -1,32 +1,27 @@
-import workStyle from "../styles/Work.module.css";
+import workStyle from "../styles/Projects.module.css";
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
-import { Stack, Typography } from "@mui/material";
+import { Card, CardMedia, Stack, Typography, Button } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 export default function ProjectTile(props) {
+    const router = useRouter();
+
     return (
-        <div className={workStyle.card}>
-            <Image className={workStyle.cardImage} src={props.img} alt="projectTile" />
-            <h1>{props.title}</h1>
-
-            <button className={workStyle.githubLink}>
-                <Stack direction="row" alignItems="center" gap={1}>
-                    <GitHubIcon fontSize="small" color="white" />
-                    <Typography variant="p"><a href={props.githubLink} target="_blank" rel="noreferrer">GitHub</a></Typography>
-                </Stack>
-            </button>
-
-            <button className={workStyle.githubLink}>
-                <Stack direction="row" alignItems="center" gap={1}>
-                    <LinkIcon fontSize="small" color="white" />
-                    <Typography variant="p"><a href={props.visitLink} target="_blank" rel="noreferrer">Visit here</a></Typography>
-                </Stack>
-            </button>
-
-            <p>{props.description}</p>
-        </div>
+        <Card className={workStyle.card}>
+            <div className={workStyle.cardBody}>
+                <h2>{props.title}</h2>
+                <p>{props.description}</p>
+                <Button className={workStyle.cardButton} variant="contained">Learn More</Button>
+            </div>
+            <div className={workStyle.cardImage}>
+                <Image src={props.img} alt={props.title} className={workStyle.image} />
+            </div>
+            {/* <LinkIcon className={workStyle.githubLink} fontSize="medium" color="primary" onClick={() => {router.push(props.visitLink)}} /> */}
+            {/* <GitHubIcon className={workStyle.githubLink} fontSize="large" color="primary" onClick={() => {router.push(props.githubLink)}} /> */}
+        </Card>
     );
 }
