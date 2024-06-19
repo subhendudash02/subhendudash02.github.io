@@ -1,14 +1,12 @@
 import workStyle from "../styles/Projects.module.css";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkIcon from '@mui/icons-material/Link';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+// import LinkIcon from '@mui/icons-material/Link';
 
 import { Card, CardMedia, Stack, Typography, Button } from "@mui/material";
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
 
 export default function ProjectTile(props) {
-    const router = useRouter();
 
     return (
         <Card className={workStyle.card}>
