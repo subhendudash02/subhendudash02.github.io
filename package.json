@@ -10,17 +10,17 @@
     "export": "next export"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.10.0",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.13",
+    "@emailjs/browser": "^3.12.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
     "gh-pages": "^5.0.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scroll": "^1.8.9",
-    "react-tsparticles": "^2.9.3",
-    "tsparticles": "^2.9.3"
+    "react-scroll": "^1.9.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^2.12.0"
   }
 }
