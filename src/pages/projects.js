@@ -9,6 +9,7 @@ import hangman from "@/assets/hangman.png";
 import pyagenda from "@/assets/pyagenda.png";
 import num from "@/assets/numerical-methods.png";
 import profile from "@/assets/profile-fetcher.png";
+import gcra from "@/assets/gcra.png";
 
 export default function Projects() {
     return (
@@ -24,33 +25,59 @@ export default function Projects() {
                 <h1>Projects</h1>
                 <p>The projects I have worked on during my college days...</p>
                 <div className={projectStyle.rows}>
-                    <ProjectTile img={hangman} 
-                                title={projectDesc.hangman.title}
-                                description={projectDesc.hangman.description}
-                                githubLink={projectDesc.hangman.githubLink}
-                                visitLink={projectDesc.hangman.link}>
+                    <ProjectTile
+                                title={projectDesc.calories_API.title}
+                                description={projectDesc.calories_API.description}
+                                githubLink={projectDesc.calories_API.githubLink}
+                                visitLink={projectDesc.calories_API.link}
+                                fullDesc={projectDesc.calories_API.extendedDesc}
+                                expand={true}>
                     </ProjectTile>
 
+                    <ProjectTile img={gcra}
+                                title={projectDesc.gesture_rec.title}
+                                description={projectDesc.gesture_rec.description}
+                                githubLink={projectDesc.gesture_rec.githubLink}
+                                visitLink={projectDesc.gesture_rec.link}
+                                fullDesc={projectDesc.gesture_rec.extendedDesc}
+                                expand={true}>
+                    </ProjectTile>
+                </div>
+                <div className={projectStyle.rows}>
                     <ProjectTile img={pyagenda} 
                             title={projectDesc.pyagenda.title}
                             description={projectDesc.pyagenda.description}
                             githubLink={projectDesc.pyagenda.githubLink}
-                            visitLink={projectDesc.pyagenda.link}>
+                            visitLink={projectDesc.pyagenda.link}
+                            fullDesc={projectDesc.pyagenda.extendedDesc}
+                            expand={true}>
                     </ProjectTile>
-                </div>
-                <div className={projectStyle.rows}>
+
                     <ProjectTile img={num} 
                                 title={projectDesc.numericalMethods.title}
                                 description={projectDesc.numericalMethods.description}
                                 githubLink={projectDesc.numericalMethods.githubLink}
-                                visitLink={projectDesc.numericalMethods.link}>
+                                visitLink={projectDesc.numericalMethods.link}
+                                fullDesc={projectDesc.numericalMethods.extendedDesc}
+                                expand={true}>
+                    </ProjectTile>
+                </div>
+                <div className={projectStyle.rows}>
+                    <ProjectTile img={hangman} 
+                                title={projectDesc.hangman.title}
+                                description={projectDesc.hangman.description}
+                                githubLink={projectDesc.hangman.githubLink}
+                                visitLink={projectDesc.hangman.link}
+                                fullDesc={projectDesc.hangman.extendedDesc}
+                                expand={false}>
                     </ProjectTile>
 
                     <ProjectTile img={profile} 
                                 title={projectDesc.profileFetcher.title}
                                 description={projectDesc.profileFetcher.description}
                                 githubLink={projectDesc.profileFetcher.githubLink}
-                                visitLink={projectDesc.profileFetcher.link}>
+                                visitLink={projectDesc.profileFetcher.link}
+                                expand={false}>
                     </ProjectTile>
                 </div>
             </div>

@@ -16,28 +16,43 @@
     border: 1px solid transparent;
     border-radius: 10px;
     margin-right: 2%;
-    display: flex;
-}
-
-.cardBody {
-    width: 70%;
     padding: 2%;
 }
 
 .cardButton {
-    background-color: var(--green);
-    font-weight: bold;
-}
-
-.cardImage {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+    color: var(--green);
+    cursor: pointer;
+    margin-right: 2%;
 }
 
 .image {
     max-width: 100%;
     height: auto;
+}
+
+.projectWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1F1E1E;
+    padding: 2%;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.closeButton {
+    display: block;
+    float: right;
+}
+
+.modalImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,10 +69,6 @@
         margin: auto;
         padding: 5% 1% 5% 1%;
         margin-bottom: 5%;
-    }
-
-    .cardBody {
-        width: 100%;
     }
 
     .image {
