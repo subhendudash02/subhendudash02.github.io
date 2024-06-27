@@ -59,6 +59,7 @@
     .projects {
         padding: 3%;
     }
+
     .rows {
         flex-direction: column;
     }
@@ -67,7 +68,7 @@
         flex-direction: column-reverse;
         width: 90%;
         margin: auto;
-        padding: 5% 1% 5% 1%;
+        padding: 5% 5% 5% 5%;
         margin-bottom: 5%;
     }
 
