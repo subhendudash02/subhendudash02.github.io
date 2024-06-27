@@ -2,6 +2,7 @@
 import navbarStyle from "../styles/Navbar.module.css";
 import Link from "next/link";
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 
 export default function Navbar() {
@@ -13,7 +14,8 @@ export default function Navbar() {
 
     return (
         <>
-        <MenuIcon onClick={toggleMenu} id={navbarStyle.hamburger} />
+        { toggle == `${navbarStyle.hide}` ? <MenuIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> 
+        : <CloseIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> }
         <nav className={navbarStyle.navbar} id={toggle}>
             <ul className={navbarStyle.navMenu}>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/">Home</Link></li>
