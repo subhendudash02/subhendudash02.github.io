@@ -47,7 +47,7 @@
     #hamburger {
         display: flex;
         justify-content: flex-end;
-        margin-left: 85%;
+        margin-right: 80%;
         padding: 10px;
     }
 
@@ -57,7 +57,7 @@
     }
 
     .navMenu {
-        padding-top: 2%;
+        padding-top: 10%;
     }
 
     .navItem {
@@ -70,5 +70,11 @@
     
     #hide {
         display: none;
+    }
+
+    .navMobile {
+        position: fixed;
+        margin-left: 87%;
+        z-index: 2;
     }
 }
