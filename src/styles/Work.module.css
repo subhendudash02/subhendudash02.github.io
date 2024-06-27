@@ -62,13 +62,9 @@
     flex-direction: row;
 }
 
-.heading {
-    text-align: center;
-}
-
 @media screen and (max-width: 768px) {
     .work {
-        padding: 0% 2% 2% 0%;
+        padding: 10% 2% 2% 2%;
         width: 90%;
         background-color: #131312;
     }

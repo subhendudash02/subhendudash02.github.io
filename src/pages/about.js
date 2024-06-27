@@ -3,9 +3,9 @@ import aboutStyle from "@/styles/About.module.css";
 import Navbar from "@/utils/navbar";
 import Head from "next/head";
 
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
+import { Noto_Sans } from 'next/font/google';
 
+const font = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
 export default function About() {
     return (
@@ -17,7 +17,7 @@ export default function About() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <div className={aboutStyle.about}>
+        <div className={`${aboutStyle.about} ${font.className}`}>
             <div className={aboutStyle.body}>
                 <h1>About me</h1>
                 <p>Nothing here :)</p>

@@ -13,11 +13,14 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { SvgIcon } from '@mui/material';
 import Head from "next/head";
 import Image from "next/image";
+import { Noto_Sans } from 'next/font/google';
 
 import myphoto from '../assets/photo_me.jpeg';
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+
+const font = Noto_Sans({ subsets: ['latin'], weight: '700' });
 
 export default function Home() {
     const particlesInit = async (main) => {
@@ -37,7 +40,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-            <div className={homeStyle.home}>
+            <div className={`${homeStyle.home} ${font.className}`}>
                 <Particles className={homeStyle.particles} 
                         id="tsparticles" 
                         init={particlesInit} 
@@ -48,7 +51,7 @@ export default function Home() {
                     <Image alt="Avatar" src={myphoto} id={homeStyle.avatar} />
                 </div>
                 <div className={homeStyle.right}>
-                    <h2 className={homeStyle.mainHeading}>Welcome to Subu's Corner!</h2>
+                    <h1 className={homeStyle.mainHeading}>Welcome to Subu's Corner!</h1>
                     <ThemeProvider theme={theme}>
                         <a href={social.github}><GitHubIcon className={homeStyle.socIcon} fontSize="large" color="primary" /></a>
                         <a href={social.devto}><LogoDevIcon className={homeStyle.socIcon} fontSize="large" color="primary" /></a>

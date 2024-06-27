@@ -1,6 +1,7 @@
 import Navbar from "@/utils/navbar";
 import { Paper, Box, Card } from "@mui/material";
 import Head from "next/head";
+import { Noto_Sans } from 'next/font/google';
 
 import projectStyle from "@/styles/Projects.module.css";
 import ProjectTile from "@/utils/projectTile";
@@ -10,6 +11,8 @@ import pyagenda from "@/assets/pyagenda.png";
 import num from "@/assets/numerical-methods.png";
 import profile from "@/assets/profile-fetcher.png";
 import gcra from "@/assets/gcra.png";
+
+const font = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
 export default function Projects() {
     return (
@@ -21,8 +24,8 @@ export default function Projects() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-            <div className={projectStyle.projects}>
-                <h1>Projects</h1>
+            <div className={`${projectStyle.projects} ${font.className}`}>
+                <h2>Projects</h2>
                 <p>The projects I have worked on during my college days...</p>
                 <div className={projectStyle.rows}>
                     <ProjectTile

@@ -4,8 +4,11 @@ import Navbar from "@/utils/navbar";
 import SchoolIcon from '@mui/icons-material/School';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import Head from "next/head";
+import { Noto_Sans } from 'next/font/google';
 
 import description from "@/utils/description";
+
+const font = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
 export default function Work() {
     return (
@@ -17,7 +20,7 @@ export default function Work() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <div className={workStyle.work}>
+        <div className={`${workStyle.work} ${font.className}`}>
             <h2 className={workStyle.heading}>Volunteering Experience</h2>
             <ul className={workStyle.flowDesc}>
                 <VolunteerActivismIcon className={workStyle.flowIcon} fontSize="large"></VolunteerActivismIcon>

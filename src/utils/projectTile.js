@@ -10,6 +10,9 @@ import { Box, Button, Modal, Typography } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { Noto_Sans } from 'next/font/google';
+
+const font = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
 export default function ProjectTile(props) {
     const [open, setOpen] = useState(false);
@@ -18,7 +21,7 @@ export default function ProjectTile(props) {
     const router = useRouter();
 
     return (
-        <div className={workStyle.card}>
+        <div className={`${workStyle.card} ${font.className}`}>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             { props.expand == true ? <ExpandMoreIcon className={workStyle.cardButton} onClick={handleOpen}fontSize="medium"></ExpandMoreIcon> : null }

@@ -4,6 +4,9 @@ import Link from "next/link";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
+import { Noto_Sans } from 'next/font/google';
+
+const font = Noto_Sans({ subsets: ['latin'], weight: '700' });
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(`${navbarStyle.hide}`);
@@ -14,9 +17,11 @@ export default function Navbar() {
 
     return (
         <>
-        { toggle == `${navbarStyle.hide}` ? <MenuIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> 
-        : <CloseIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> }
-        <nav className={navbarStyle.navbar} id={toggle}>
+        <div className={navbarStyle.navMobile}>
+            { toggle == `${navbarStyle.hide}` ? <MenuIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> 
+            : <CloseIcon onClick={toggleMenu} id={navbarStyle.hamburger} /> }
+        </div>
+        <nav className={`${navbarStyle.navbar} ${font.className}`} id={toggle}>
             <ul className={navbarStyle.navMenu}>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/">Home</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/about">About</Link></li>

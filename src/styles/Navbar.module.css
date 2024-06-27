@@ -3,7 +3,6 @@
     flex-direction: row;
     background-color: rgb(31, 30, 30, 0.3);
     backdrop-filter: blur(10px);
-    font-size: 20px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -76,5 +75,7 @@
         position: fixed;
         margin-left: 87%;
         z-index: 2;
+        backdrop-filter: blur(10px);
+        width: 100%;
     }
 }
