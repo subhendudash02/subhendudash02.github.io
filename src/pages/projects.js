@@ -25,7 +25,7 @@ export default function Projects() {
             </Head>
             <Navbar />
             <div className={`${projectStyle.projects} ${font.className}`}>
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <p>The projects I have worked on during my college days...</p>
                 <div className={projectStyle.rows}>
                     <ProjectTile

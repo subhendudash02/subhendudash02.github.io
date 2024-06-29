@@ -31,7 +31,7 @@ export default function ProjectTile(props) {
             <Modal open={open} onClose={handleClose}>
                 <Box className={workStyle.projectWindow}>
                     <CloseIcon className={workStyle.closeButton} onClick={handleClose} />
-                    <h1>{props.title}</h1>
+                    <h2>{props.title}</h2>
                     <Image src={props.img} className={workStyle.modalImage} />
                     <br />
                     <Markdown children={props.fullDesc}></Markdown>

@@ -21,13 +21,15 @@ export default function Work() {
         </Head>
         <Navbar />
         <div className={`${workStyle.work} ${font.className}`}>
-            <h2 className={workStyle.heading}>Volunteering Experience</h2>
+            <h1 className={workStyle.heading}>Volunteering Experience</h1>
             <ul className={workStyle.flowDesc}>
                 <VolunteerActivismIcon className={workStyle.flowIcon} fontSize="large"></VolunteerActivismIcon>
                 <li className={workStyle.flowBox}>
                     <div className={workStyle.demo}>
-                        <h2>{description.hc.name}</h2>
-                        <i>{description.hc.year}</i>
+                        <div className={workStyle.header}>
+                            <h2>{description.hc.name}</h2>
+                            <i>{description.hc.year}</i>
+                        </div>
                         { description.hc.desc.map((i, ind) => {
                             return <p key={ind}>{i}</p>;
                         }) }
@@ -36,8 +38,10 @@ export default function Work() {
 
                 <li className={workStyle.flowBox}>
                     <div className={workStyle.demo}>
-                        <h2>{description.gwoc.name}</h2>
-                        <i>{description.gwoc.year}</i>
+                        <div className={workStyle.header}>
+                            <h2>{description.gwoc.name}</h2>
+                            <i>{description.gwoc.year}</i>
+                        </div>
                         { description.gwoc.desc.map((i, ind) => {
                             return <p key={ind}>{i}</p>;
                         }) }
@@ -47,13 +51,15 @@ export default function Work() {
 
             <br />
 
-            <h2 className={workStyle.heading}>Education</h2>
+            <h1 className={workStyle.heading}>Education</h1>
             <ul className={workStyle.flowDesc}>
                 <SchoolIcon className={workStyle.flowIcon} fontSize="large"></SchoolIcon>
                 <li className={workStyle.flowBox}>
                     <div className={workStyle.demo}>
-                        <h2>{description.college.name}</h2>
-                        <i>{description.college.year}</i>            
+                        <div className={workStyle.header}>
+                            <h2>{description.college.name}</h2>
+                            <i>{description.college.year}</i>
+                        </div>            
                         { description.college.desc.map((i, ind) => {
                             return <p key={ind}>{i}</p>;
                         }) }
@@ -62,8 +68,10 @@ export default function Work() {
 
                 <li className={workStyle.flowBox}>
                     <div className={workStyle.demo}>
-                        <h2>{description.school.name}</h2>
-                        <i>{description.school.year}</i>
+                        <div className={workStyle.header}>
+                            <h2>{description.school.name}</h2>
+                            <i>{description.school.year}</i>
+                        </div>
                         { description.school.desc.map((i, ind) => {
                             return <p key={ind}>{i}</p>;
                         }) }

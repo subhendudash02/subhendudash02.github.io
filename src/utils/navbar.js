@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import { Noto_Sans } from 'next/font/google';
+import social from "./social";
 
 const font = Noto_Sans({ subsets: ['latin'], weight: '700' });
 
@@ -27,8 +28,8 @@ export default function Navbar() {
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/about">About</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/experience">Experience</Link></li>
                 <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/projects">Projects</Link></li>
-                <li className={navbarStyle.navItem}><a href="https://subhendudash02.github.io/resume/Subhendu_Dash.pdf" className={navbarStyle.navLink} target="_blank" rel="noreferrer">Resume</a></li>
-                <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="">Blogs</Link></li>
+                {/* <li className={navbarStyle.navItem}><Link className={navbarStyle.navLink} href="/blogs">Blogs</Link></li> */}
+                <li className={navbarStyle.navItem}><a href={social.resume} className={navbarStyle.navLink} target="_blank" rel="noreferrer">Resume</a></li>
             </ul>
         </nav>
         </>

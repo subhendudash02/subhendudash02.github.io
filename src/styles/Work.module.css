@@ -62,6 +62,16 @@
     flex-direction: row;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header > i {
+    padding: 4%;
+}
+
 @media screen and (max-width: 768px) {
     .work {
         padding: 10% 2% 2% 2%;
@@ -81,5 +91,13 @@
     .flowBox {
         padding: 7%;
         width: 85%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header > i {
+        padding: 0;
     }
 }
