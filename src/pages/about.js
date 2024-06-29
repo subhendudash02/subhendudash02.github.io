@@ -4,6 +4,7 @@ import Navbar from "@/utils/navbar";
 import Head from "next/head";
 
 import { Noto_Sans } from 'next/font/google';
+import social from "@/utils/social";
 
 const font = Noto_Sans({ subsets: ['latin'], weight: '400' });
 
@@ -20,8 +21,20 @@ export default function About() {
         <div className={`${aboutStyle.about} ${font.className}`}>
             <div className={aboutStyle.body}>
                 <h1>About me</h1>
-                <p>Nothing here :)</p>
-
+                <p>I am Subhendu Dash, who loves to solve real-world problems via programming since my school days. I have been experimenting
+                    with the various technologies since a long period of time and have an idea of most of it. I am a Full Stack Developer and
+                    have a good knowledge of the following technologies:
+                </p>
+                <ul>
+                    <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
+                    <li><b>Backend: </b>Python, NodeJS</li> 
+                    <li><b>Other Programming Languages: </b>C, C++, R, Java</li>
+                    <li><b>Database: </b>MySQL, MongoDB</li>
+                    <li><b>Developer Tools: </b>Git, GitHub, Docker, Supabase</li>
+                </ul>
+                <p>I have hands-on experience on various Python and NodeJS libraries required for the backend development as well as GUI based applications.</p>
+                <p>In my free time, I do sketching as well as solve Rubik's cube sometimes.</p>
+                <p>Feel free to <a href={social.email}>mail</a> me if you want to collaborate or want help in any technical project.</p>
             </div>
         </div>
         </>

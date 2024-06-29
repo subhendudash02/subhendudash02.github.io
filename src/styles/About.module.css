@@ -9,11 +9,11 @@
 
 .body {
     text-align: justify;
-    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
     .about {
+        padding: 10% 0 0 0;
         width: 85%;
         background-color: #131312;
         border-radius: 0;
